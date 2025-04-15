@@ -19,7 +19,5 @@ stdenv.mkDerivation rec {
     description = "Lennis.dev website";
     license = licenses.mit;
     homepage = "https://www.lennis.dev/";
-    maintainers = with maintainers; [ lennis-dev ];
   };
 }
-
