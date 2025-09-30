@@ -2,12 +2,12 @@
   stdenv,
   fetchFromGitHub,
   lib,
-  path,
 }:
 
 stdenv.mkDerivation rec {
   name = "dev-lennis-xauth-server-${version}";
   version = "076c4ac";
+  path = "/var/lib/xauth-server/data/";
   src = fetchFromGitHub {
     owner = "lennis-dev";
     repo = "xauth-server";

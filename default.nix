@@ -20,7 +20,7 @@
   email-obfuscater = pkgs.callPackage ./pkgs/email-obfuscater { };
   hackit = pkgs.callPackage ./pkgs/hackit { };
   update-my-nur = pkgs.callPackage ./pkgs/update-my-nur { };
-  xauth-server = pkgs.callPackage ./pkgs/xauth-server { path = "/var/lib/xauth-server/data/"; };
+  xauth-server = pkgs.callPackage ./pkgs/xauth-server { };
   gio-project-avatar-fetcher = pkgs.callPackage ./pkgs/gio-project-avatar-fetcher { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
