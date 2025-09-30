@@ -19,6 +19,7 @@
   dev-lennis-www = pkgs.callPackage ./pkgs/dev-lennis-www { };
   email-obfuscater = pkgs.callPackage ./pkgs/email-obfuscater { };
   hackit = pkgs.callPackage ./pkgs/hackit { };
+  update-my-nur = pkgs.callPackage ./pkgs/update-my-nur { };
   gio-project-avatar-fetcher = pkgs.callPackage ./pkgs/gio-project-avatar-fetcher { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
