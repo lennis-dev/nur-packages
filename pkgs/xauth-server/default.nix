@@ -35,8 +35,8 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    description = "Lennis.dev website";
+    description = "The server handling single sign-on and authentication for Lennis.dev services.";
     license = licenses.mit;
-    homepage = "https://www.lennis.dev/";
+    homepage = "https://auth.lennis.dev/";
   };
 }
