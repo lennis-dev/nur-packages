@@ -2,8 +2,8 @@
   stdenv,
   fetchFromGitHub,
   lib,
-  dataPath ? "/var/lib/xauth-server/data/"
-  svgBanner
+  dataPath ? "/var/lib/xauth-server/data/",
+  svgBanner ? null,
 }:
 
 stdenv.mkDerivation rec {
@@ -31,8 +31,7 @@ stdenv.mkDerivation rec {
     shopt -s dotglob
     cp -r ${src}/* $out/www/
     echo "${configContent}" > $out/www/config.php
-  '' ++ lib.optionalString (svgBanner != null) ''
-    cp ${svgBanner} $out/www/assets/img/banner.svg
+    ${lib.optionalString (svgBanner != null) "cp '${svgBanner}' $out/www/assets/img/banner.svg"}
   '';
 
   meta = with lib; {
